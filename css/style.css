@@ -462,6 +462,7 @@ h2{
     position: absolute;
     right: 0;
     bottom: 90px;
+    z-index: -1;
 }
 .faq_wrapper{
     max-width: 1170px;
