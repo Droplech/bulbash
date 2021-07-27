@@ -15,74 +15,77 @@
 <body>
     <header>
         <section class="navigation">
-            <div class="container">
-                <div class="navigation_wrapper">
-                    <div class="logo">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                    <ul class="nav_links">
-                        <li>
-                            <a href="#">Каталог</a>
-                        </li>
-                        <li>
-                            <a href="#">Рецепты</a>
-                        </li>
-                        <li>
-                            <a href="#">Доставка и оплата</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-
-                    <a href="#" class="request_call">Заказать звонок</a>
-
-                    <a href="#" class="basket">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="40" height="40" fill="url(#pattern0)"/>
-                            <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                            <use xlink:href="#image0" transform="scale(0.0104167)"/>
-                            </pattern>
-                            <image id="image0" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAGOUlEQVR4nO2dTWxUVRTH/+fOtKUaKiCJ0aiUAd0IMSZqLGz4aDvTEeLCpAkrScBoTHRR0bAQM25MxBgMkQ9jEVYosFLSTmcohY18qIALEMGZKQIxAcVqkY+2M++4oEBtXzvMe+dO33tzf0kXfbnn3P+8f96be877GMBgMBgMBoPBYDBUGjR6Q1dz5DKA8IhNdQBCRfL0HlmQm5tIwJIUVwkom23TAEwf8Vds5wPA7BcOR1okhVUKdgawk0TEeMOllopEzAAGWtJNkSdc6qk4xhhAcHweJyZ+1aWeimOMAezwCLgVS6v3Ln/kPneSKguxU9Aw08M3a1tdxFcc0gaAiN90E19pjKkDDiyqn3btfuvOdlb5geV7f79++/+upjnvgvijcgn0AX0AekC0NpbKZkoNHmNAMfYuenJmVXX+AoAppcYGnL+skHo+nsxkSwmyOwVNyPKDZ/9k8K5S4yqAGSrPH5YaVLIBAECEzU7iAg9ZS0sNcWRALNX7PQM/Ook1/B9HBgAAmDYJ6ggEDNpXaoxjA67+O7AL4CtO4wOIxZZaX2qQYwNaD1+8wVDbncYHDQK2x7szJ0qNc34KAlBlhbbAee8oMBBwA6APnMS6MqCx+2yOgC43OYKABayPprMXnMS6MgAA2CxJLw1OqfrEabBrA6KpXCeAX93m8S3M77307ZmrTsNdG0AAM+gLt3n8CZ2uGZq1w00G1wYAQKFqqB3A9aIDgwahbfHBg3k3KUQMWNZxvo/BeyRy+QUGemKprOsFiIgBAEAU2iiVywdYROodiURiBsRSmeNg/CCVz+PsiKUyxyUSiRkAAAwK/JKUgBsESkjlkzUgTF8B+EMyp9dwU3TZIWpAPJkZILCrZZnHueym6LJD1AAAyIexCUBBOq8nIHdFlx3iBrzY2fsbASnpvJMPna4ZmCXe/RU3AAAsRuAu1hDwttuia5y88jBAqebIGQBBuVf0QCydW6IjsZYjIGD9IQuk1uhKrsUAIFD9IbGiyw5tBizrON8Hwm5d+cuBdNFlhzYDAMAqKF/3h5jxsWTRZYdWA+LdmRM+7g9dtsJKtOiyQ6sBAEDkz/uHCLQunsz0655HuwGFEH0N3/WH6HT14GNflmMm7QbEk5kBEH2jex5JmHmNjqLLDu0GdC+d/RCYX9Y9jxQEbGvZl+ss13zaDciHaQNuPW/sB44O1tx8q5wTajUg2VgfBWOFzjmEYBC11wxai0Y+DVQOwsWHOGN3w6O1UJ6+QvYPiHMAHbKU2hxPZn6eDBHaDJg6tfp9AiJFhp0jXJsXTV+6pkuH19HSDU01z5nH4OMAqorMviyWynXo0OAXxL8DEgkoC7wVxXY+sLPSdz6gwYCGQ5GVBCwsMqwvXOA26bn9iKgBiQQUA+uKjSPQ2sb9vZck5/YrogY0HKp/DkD9RGMY+O7wgmy75Lx+Rva+IFLPFBkypECvmzdr3UXWAKapEw+gz6Pp7EnJOf2O6DI02RRZQYSdkjm9RiydE91nokcAKXVGMl8lIGrA8B3Sk1LS+xX5ZpziLeI5A4y4AUcaejcz0COdN6joaEVYHFKvAPhFOncQ0XI9IJ7MXKwZtBoIKNuVJb+ipRs6klTz7CYGrQRjIQgPA6jWPadOpJehBoPBYKhctH+hdDRG5ocVr2bQUtxtVZ8DoZuY2ie7OTfZ+rQZ0Nkyt0YVrA0AXsP4y90CCFv762rbWvecGtSlxQ6v6NNiwPCHSwJYfC/jGei5+kBtS7lM8JI+LYWYyluf4h4/HAAQsKTu75vabwW/jZf0iR8BHY2R+SGFn1C6uQWQejqWypyS1jQSr+kTPwLCilc7zBtitlZJ6xmN1/SJG8BMjU5jCWiS1GKH1/TJfwcQHncRPUtMx3h4TJ+OL2E3PwDh6scjyjCHuD55Axhunio8L6ZjPDymT8MlSZT8Aus7ENKCSuzxmD5xA4ipHc5eV1OwlNomrWc0XtMnbkA0nT0JwtZS4wi8qRwPSXhNn5ZKuL+utg2E/SWEdD94ZYa2F2KMxkv6tBjQuufUYH9dbRxMn2Hiw71A4I0zr0yPP3vs2JAOLV7Xp70d3RWd+xSztWq4iBnZ7k1bSm2brGez/KLPYDAYDAaDwWAwBI//AIjvGZ6lMYPDAAAAAElFTkSuQmCC"/>
-                            </defs>
-                        </svg>
-                            
-                    </a>
-                    <div class="burger">
-                        <div class="burger_button">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+            <div class="nav_content">
+                <div class="container">
+                    <div class="navigation_wrapper">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
                         </div>
-                        <div class="burger_menu">
-                            <div class="burger_menu_content">
-                                <ul class="burger_nav">
-                                    <li>
-                                        <a href="#">Каталог</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Рецепты</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Доставка и оплата</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Контакты</a>
-                                    </li>
-                                </ul>
-                                <a href="#" class="burger_request_call">Заказать звонок</a>
+                        <ul class="nav_links">
+                            <li>
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#">Рецепты</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
     
-                                <a href="#" class="burger_basket">
-                                   <img src="img/basket.png" alt="">
-                                        
-                                </a>
+                        <a href="#" class="request_call">Заказать звонок</a>
+    
+                        <a href="#" class="basket">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="40" height="40" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.0104167)"/>
+                                </pattern>
+                                <image id="image0" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                                
+                        </a>
+                        <div class="burger">
+                            <div class="burger_button">
+                                <div></div>
+                                <div></div>
+                                <div></div>
                             </div>
-                            
+                            <div class="burger_menu">
+                                <div class="burger_menu_content">
+                                    <ul class="burger_nav">
+                                        <li>
+                                            <a href="#">Каталог</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Рецепты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Доставка и оплата</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="burger_request_call">Заказать звонок</a>
+        
+                                    <a href="#" class="burger_basket">
+                                       <img src="img/basket.png" alt="">
+                                            
+                                    </a>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+           
         </section>
     </header>
     

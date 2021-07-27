@@ -1244,7 +1244,7 @@ h2{
 }
 .burger{
     display: none;
-    position: relative;
+  
 }
 .burger .burger_button{
     width: 40px;
@@ -1259,10 +1259,14 @@ h2{
     background-color: #B84622;
     border-radius: 5px;
 }
+
+.nav_content{
+    position: relative;
+}
 .burger .burger_menu {
     position: absolute;
-    right: -19px;
-    top: 74px;
+    right: 0;
+    top: 100%;
     background-color: #fff;
     z-index: 100;
     width: 300px;
@@ -1578,5 +1582,10 @@ h2{
     }
     .basket_wrapper .name_col span:nth-child(4) {
         margin: 0 51px 0 29px;
+    }
+    .burger .burger_menu{
+        width: 100%;
+        top: 100%;
+        right: 0;
     }
 }
