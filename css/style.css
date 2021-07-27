@@ -84,9 +84,7 @@ h2{
     width: 100%;
     transition: .3s;
 }
-.navigation_wrapper .button_callBack{
-    position: relative;
-}
+
 .navigation_wrapper .request_call{
     color: #B84622;
     font-weight: 400;
@@ -103,44 +101,127 @@ h2{
 }
 
 
-.navigation_wrapper  .order_callBack{
-    position: absolute;
-    top: 85px;
-    right: 0;
-    width: 475px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.25);
+
+
+
+
+.order_callBack{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 110;
     display: none;
+    
 }
-.navigation_wrapper .button_callBack .order_callBack #acept,
-.navigation_wrapper .button_callBack .order_callBack #error{
-    margin-top: 5px;
-    font-size: 12px;
-}
-.navigation_wrapper .button_callBack .order_callBack .forder_callBack_content{
+
+
+.order_callBack_wrapper .close{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.order_callBack_wrapper .close .close_btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.order_callBack_wrapper .close .close_btn div{
+    width: 40px;
+    height: 3px;
+    background-color: #B84622;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.order_callBack_wrapper .close .close_btn div:first-child{
+    transform: rotate(45deg);
+}
+.order_callBack_wrapper .close .close_btn div:last-child{
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+.order_callBack_wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 400px;
+    height: 420px;
+    display: none;
+    z-index: 120;
+}
+.order_callBack_wrapper .order_callBack_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+form{
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+}
+form h3{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.order_callBack_wrapper #acept,
+.order_callBack_wrapper #error{
+    margin: 5px 0;
+    font-size: 15px;
+}
+.order_callBack_wrapper .forder_callBack_content{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
-.navigation_wrapper .button_callBack .order_callBack input{
+.order_callBack_wrapper input{
     background: #FFFFFF;
     border: 1px solid #D0D0D0;
     outline: none;
-    height: 30px;
-    width: 170px;
-    padding: 0 10px;
+    height: 64px;
+    width: 100%;
+    padding: 0 24px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.navigation_wrapper .button_callBack .order_callBack button{
+.order_callBack_wrapper button{
     background: #B84622;
     border: none;
     outline: none;
     color: #fff;
-    height: 30px;
-    padding: 0 10px;
+    
+    padding: 23px 87px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 .navigation_wrapper .basket{
     position: relative;
 }
@@ -1647,7 +1728,13 @@ h2{
     }
     .first_block_wrapper{
         flex-wrap: wrap;
+      
     }
+    .first_block_wrapper .txt{
+        text-align: center;
+        margin-left: 0;
+    }
+   
     .first_block .first_bg {
         right: -230%;
     }
