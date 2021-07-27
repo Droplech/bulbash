@@ -1058,7 +1058,7 @@ h2{
 }
 
 .basket_wrapper .name_col span:nth-child(2){
-    margin: 0 263px 0 150px;
+    margin: 0 237px 0 150px;
 }
 .basket_wrapper .name_col span:nth-child(4){
     margin: 0 128px 0 100px;
@@ -1493,10 +1493,10 @@ h2{
         font-size: 32px;
     }
     .basket_wrapper .name_col span:nth-child(2) {
-        margin: 0 214px 0 105px;
+        margin: 0 190px 0 105px;
     }
     .basket_wrapper .name_col span:nth-child(4) {
-        margin: 0 90px 0 50px;
+        margin: 0 90px 0 75px;
     }
     .contacts_wrapper{
         flex-wrap: wrap;
