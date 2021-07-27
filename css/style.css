@@ -309,13 +309,28 @@ h2{
 }
 
 .stock_slider_item {
-    padding: 68px 62px 32px;
+    
     display: block;
     flex: 0 0 334px;
-    text-align: center;
+    
     position: relative;
     
 }
+
+
+.stock_slider_item .stock_slider_item_wrapper{
+    width: 100%;
+    padding: 68px 62px 0;
+    text-align: center;
+    display: block;
+}
+
+
+
+
+
+
+
 .stock_slider_item:hover{
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
 }
@@ -344,6 +359,7 @@ h2{
     font-size: 18px;
     margin-top: 24px;
     display: block;
+    color: #000;
 }
 
 .stock_slider_item .txt .price{
@@ -355,14 +371,17 @@ h2{
     font-weight: 400;
     font-size: 16px;
     text-decoration: line-through;
+    color: #000;
 }
 .stock_slider_item .txt .price .new_price{
     font-weight: 400;
     font-size: 18px;
     color: #B84622;
 }
-
-.stock_slider_item .txt .buy{
+.stock_slider_item .button_block{
+    text-align: center;
+}
+.stock_slider_item .button_block .buy{
     font-weight: 400;
     font-size: 16px;
     color: #fff;
@@ -371,8 +390,9 @@ h2{
     padding: 10px 42px ;
     display: inline-block;
     transition: .3s;
+    margin-bottom: 32px;
 }
-.stock_slider_item .txt .buy:hover{
+.stock_slider_item .button_block .buy:hover{
     background: #752e18;
     transition: .3s;
 }
@@ -837,6 +857,10 @@ h2{
     display: none ;
 }
 
+.suitable_recipes .stock_slider_item{
+    padding: 68px 62px 32px;
+    text-align: center;
+}
 
 .suitable_recipes .stock_slider_item .txt span{
     color: #000;
@@ -1539,6 +1563,9 @@ h2{
         flex-basis: 43%;
         padding: 68px 0px 32px;
     }
+    .category_catalog_wrapper .stock_slider_item .stock_slider_item_wrapper{
+        padding: 68px 0px 32px;
+    }
     .product_info_wrapper{
         flex-wrap: wrap;
         justify-content: center;
@@ -1656,10 +1683,11 @@ h2{
         justify-content: center;
     }
     .category_catalog_wrapper .stock_slider_item {
-        flex-basis: 67%;
+        flex-basis: 100%;
         padding: 68px 0px 32px;
         margin-right: 0;
     }
+   
     .shipping_payment{
         margin-top: 0;
     }
@@ -1747,5 +1775,8 @@ h2{
     }
     .footer_wrapepr .footer_info .btn{
         padding: 15px 20px;
+    }
+    .info_abut_us_wrapper .info_item{
+        flex-basis: 40%;
     }
 }
