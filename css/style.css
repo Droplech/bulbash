@@ -160,6 +160,10 @@ h2{
     justify-content: space-evenly;
     padding: 108px 0;
 }
+.info_abut_us_wrapper .info_item{
+    flex-basis: 30%;
+    text-align: center;
+}
 .info_abut_us_wrapper .info_item .icon{
     text-align: center;
     margin-bottom: 16px;
@@ -518,7 +522,9 @@ h2{
     display: flex;
     justify-content: space-between;
 }
-
+.footer_wrapepr > div{
+    width: 194px;
+}
 .footer_wrapepr .logo{
     width: 132px;
 }
@@ -537,6 +543,8 @@ h2{
     font-weight: 400;
     font-size: 18px;
     color: #A8A8A8;
+    overflow-wrap: break-word;
+
 }
 .footer_wrapepr .nav ul{
     margin-top: 24px;
@@ -562,7 +570,7 @@ h2{
     font-size: 18px;
     color: #B84622;
     border: 2px solid #B84622;
-    padding: 15px 57px;
+    padding: 15px 24px;
     margin-bottom: 16px;
     transition: .3s;
 }
@@ -735,7 +743,13 @@ h2{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 13px 43px 12px 44px;
     display: inline-block;
+    transition: .3s;
     
+}
+.product_info_wrapper .product_txt .product_card_price .btn:hover,
+.product_info_wrapper .product_txt .product_card_price .order_product:hover{
+    background: #752e18;
+    transition: .3s;
 }
 .product_info_wrapper .product_txt .product_card_price .order_product{
     display: none;
@@ -881,6 +895,7 @@ h2{
     font-weight: 500;
     font-size: 18px;
     color: #202124;
+    width: 223px;
 }
 
 
@@ -989,7 +1004,12 @@ h2{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 23px 88px 22px;
     display: inline-block;
+    transition: .3s;
    
+}
+.basket_wrapper .order_basket_prod .basket_order_btn:hover{
+    background: #752e18;
+    transition: .3s;
 }
 
 .basket_wrapper .order_basket_prod .form_to_order form{
@@ -1029,8 +1049,12 @@ h2{
     color: #fff;
     font-weight: 400;
     font-size: 16px;
+    transition: .3s;
 }
-
+.basket_wrapper .order_basket_prod .form_to_order form button:hover{
+    background: #752e18;
+    transition: .3s;
+}
 
 
 .basket_wrapper .order_basket_prod .form_to_order{
@@ -1067,9 +1091,13 @@ h2{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 23px 106px 22px 107px;
     display: inline-block;
+    transition: .3s;
 }
 
-
+.modal_order_completed .btn_to_home:hover{
+    background: #752e18;
+    transition: .3s;
+}
 
 /* contacts */
 .contacts_page{
@@ -1092,6 +1120,7 @@ h2{
 .contacts_wrapper .contact_us{
     display: flex;
     flex-direction: column;
+    width: 175px;
 }
 
 .contacts_wrapper .contact_us .day_work{
@@ -1152,8 +1181,12 @@ h2{
     border: none;
     padding: 23px 87px 22px 88px;
     cursor: pointer;
+    transition: .3s;
 }
-
+.contacts_wrapper .form_requestCall button:hover{
+    background: #752e18;
+    transition: .3s;
+}
 .contacts_wrapper .map{
     
     width: 517px;
@@ -1384,6 +1417,17 @@ h2{
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
+    .footer_wrapepr{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer_wrapepr > div{
+        margin-right: 87px;
+        margin-bottom: 55px;
+    }
+    .footer_wrapepr > div:last-child{
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 800px ){
     .shipping_payment_item{
@@ -1410,13 +1454,7 @@ h2{
         bottom: -302px;
         right: -156px;
     }
-    .footer_wrapepr{
-        flex-wrap: wrap;
-    }
-    .footer_wrapepr .nav{
-        margin-right: 87px;
-        margin-bottom: 55px;
-    }
+   
    
     .navigation_wrapper .nav_links,
     .navigation_wrapper .request_call,
@@ -1461,6 +1499,10 @@ h2{
     }
     .basket_wrapper .order_basket_prod .form_to_order form > div input{
         width: 100%;
+    }
+    .footer_wrapepr > div {
+        margin-right: 5px;
+        margin-bottom: 55px;
     }
 }
 @media screen and (max-width: 600px ) {
@@ -1587,5 +1629,17 @@ h2{
         width: 100%;
         top: 100%;
         right: 0;
+    }
+    .footer_wrapepr .logo{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .footer_wrapepr > div {
+        margin-right: 0;
+        margin-bottom: 55px;
+        flex-basis: 50%;
+    }
+    .footer_wrapepr .footer_info .btn{
+        padding: 15px 20px;
     }
 }

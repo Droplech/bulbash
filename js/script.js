@@ -92,6 +92,7 @@ $(document).ready(function(){
 
     pagination: {
       el: "#stock_pagination",
+      clickable: true,
     },
 
     breakpoints:{
