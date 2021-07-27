@@ -75,7 +75,26 @@ $(document).ready(function(){
 
   $('.request_call').click(function(e){
     e.preventDefault()
-    $('.order_callBack').slideDown()
+    if ( !$(this).hasClass('request_call-active')){
+      $(this).addClass('request_call-active')
+      $('.order_callBack').slideDown()
+    }else{
+      $(this).removeClass('request_call-active')
+      $('.order_callBack').slideUp()
+    }
+    
+  })
+
+  $('.burger_request_call').click(function(e){
+    e.preventDefault()
+    if ( !$(this).hasClass('burger_request_call-active')){
+      $(this).addClass('burger_request_call-active')
+      $(this).next().slideDown()
+    }else{
+      $(this).removeClass('burger_request_call-active')
+      $(this).next().slideUp()
+    }
+    
   })
 
 

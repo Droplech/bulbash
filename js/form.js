@@ -115,4 +115,43 @@ $(document).ready(function(){
             
         }
     }
+
+    $('#burger_callBack_form').bind("submit",checkOrderBurgerCallBack);
+    function checkOrderBurgerCallBack(e){
+        e.preventDefault()
+
+        var el = document.getElementById('burger_callBack_form')
+
+        var name = el.name.value;
+        var phone = el.phone.value;
+        var fail = "";
+        var acept = "Форма заполнена и отправлена. Оператор свяжется с вами в ближайшее время";
+        
+        if(name == "" || phone == "" )
+        fail = "Все поля должны быть заполнены корректно";
+
+        else if(name.length <= 1 || name.length > 50  )
+        fail = "Введите корректное имя";
+
+        else if(phone.length < 12 || phone.length > 12)
+        fail = "Номер введен некорректно"
+        
+        console.log("Name:" + " " + name + ";")
+        console.log("Phone"  + " " + phone + ";");
+        
+        if( fail != ""){
+            $("#errorBurg").html(fail)
+            $("#aceptBurg").html("")
+        }else{
+            $("#aceptBurg").html(acept)
+            $("#errorBurg").html("")
+            setTimeout(() => {
+                $('.order_callBack').slideUp()
+            }, 3000);
+            
+            
+            
+            
+        }
+    }
 })

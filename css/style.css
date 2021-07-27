@@ -87,7 +87,7 @@ h2{
 .navigation_wrapper .button_callBack{
     position: relative;
 }
-.navigation_wrapper .button_callBack .request_call{
+.navigation_wrapper .request_call{
     color: #B84622;
     font-weight: 400;
     font-size: 18px;
@@ -103,7 +103,7 @@ h2{
 }
 
 
-.navigation_wrapper .button_callBack .order_callBack{
+.navigation_wrapper  .order_callBack{
     position: absolute;
     top: 85px;
     right: 0;
@@ -141,9 +141,25 @@ h2{
     padding: 0 10px;
     cursor: pointer;
 }
-
-
-
+.navigation_wrapper .basket{
+    position: relative;
+}
+.quantity_basket{
+    position: absolute;
+    top: -17px;
+    right: -13px;
+    background: #B84622;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quantity_basket span{
+    color: #fff;
+    font-size: 13px;
+}
 
 
 .first_block{
@@ -523,11 +539,12 @@ h2{
 .faq_item{
     width: 100%;
     border: 1px solid #B84622;
-    padding: 13px 44px;
+    
     cursor: pointer;
 }
 
 .faq_item .faq_title{
+    padding: 13px 44px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -541,9 +558,9 @@ h2{
 
 .faq_item .faq_body{
     border-top: 1px solid #B84622;
-    margin-top: 13px;
-    padding-top: 13px;
+    
     display: none;
+    padding: 13px 44px;
 }
 
 .faq_item .faq_body p{
@@ -999,7 +1016,10 @@ h2{
     transform: rotate(-45deg);
     display: block;
 }
-
+.basket_item .price,
+.basket_item .outcome{
+    width: 100px;
+}
 .basket_wrapper .name_col{
     display: flex;
     padding-left: 50px;
@@ -1384,8 +1404,12 @@ h2{
     padding: 15px;
 }
 
-
-
+.burger .burger_menu .burger_basket{
+    position: relative;
+}
+.burger .burger_menu .burger_basket .quantity_basket{
+    position: absolute;
+}
 
 
 
@@ -1548,6 +1572,44 @@ h2{
         margin-right: 5px;
         margin-bottom: 55px;
     }
+    .burger .burger_menu{
+        height: auto;
+        padding: 20px 0;
+        
+    }
+    .burger_menu_content .order_callBack{
+        position: static;
+        width: 210px;
+        box-shadow: none;
+        padding: 20px 0;
+    }
+    .burger_menu_content .forder_callBack_content{
+        flex-direction: column;
+    }
+    .burger_menu_content .button_callBack{
+        text-align: center;
+    }
+    .burger_menu_content .button_callBack input{
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+    .burger_menu_content .burger_nav li{
+        margin: 0 0 10px 0 !important; 
+    }
+    .burger_menu_content .burger_basket{
+        margin-top: 30px;
+    }
+    .burger_menu_content #aceptBurg{
+        color: green;
+        margin-top: 5px;
+    }
+    .burger_menu_content #errorBurg{
+        color: red;
+        margin-top: 50px;
+    }
+
+
+
 }
 @media screen and (max-width: 600px ) {
     .catalog_wrapper .catalog_item{

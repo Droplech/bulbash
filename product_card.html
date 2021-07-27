@@ -35,10 +35,31 @@
                                 <a href="#">Контакты</a>
                             </li>
                         </ul>
-    
-                        <a href="#" class="request_call">Заказать звонок</a>
-    
+                        <div class="button_callBack">
+                            <a href="#" class="request_call">Заказать звонок</a>
+
+                            <div class="order_callBack">
+                                <form action="#" id="order_callBack_form">
+                                    <div class="forder_callBack_content">
+                                        <input type="name" name="name" id="name" placeholder="Ваше имя">
+                                        <input type="phone" name="phone" id="phone" placeholder="Ваш телефон">
+                                        <button type="submit">
+                                            Отправить
+                                        </button>
+                                    </div>
+                                    <div id="acept"></div>
+                                    <div id="error"></div>
+                                   
+                                </form>
+
+                            </div>
+                        </div>
+                        
+
                         <a href="#" class="basket">
+                            <div class="quantity_basket">
+                                <span>10</span>
+                            </div>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="40" height="40" fill="url(#pattern0)"/>
                                 <defs>
@@ -72,9 +93,35 @@
                                             <a href="#">Контакты</a>
                                         </li>
                                     </ul>
-                                    <a href="#" class="burger_request_call">Заказать звонок</a>
-        
+                                    
+                                    <div class="button_callBack">
+                                        <a href="#" class="burger_request_call">Заказать звонок</a>
+            
+                                        <div class="order_callBack">
+                                            <form action="#" id="burger_callBack_form">
+                                                <div class="forder_callBack_content">
+                                                    <input type="name" name="name" id="name" placeholder="Ваше имя">
+                                                    <input type="phone" name="phone" id="phone" placeholder="Ваш телефон">
+                                                    <button type="submit">
+                                                        Отправить
+                                                    </button>
+
+                                                   
+
+                                                </div>
+                                                
+                                                
+                                               
+                                            </form>
+                                            <div id="aceptBurg"></div>
+                                            <div id="errorBurg"></div>
+            
+                                        </div>
+                                    </div>
                                     <a href="#" class="burger_basket">
+                                        <div class="quantity_basket">
+                                            <span>10</span>
+                                        </div>
                                        <img src="img/basket.png" alt="">
                                             
                                     </a>
@@ -920,5 +967,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
