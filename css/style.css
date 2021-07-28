@@ -113,7 +113,7 @@ h2{
     height: 100%;
     z-index: 110;
     display: none;
-    overflow-y: auto;
+    
 }
 
 
@@ -147,7 +147,6 @@ h2{
 .order_callBack_wrapper .close .close_btn div:last-child{
     transform: rotate(-45deg);
 }
-
 
 
 
@@ -1693,12 +1692,7 @@ form h3{
         padding: 20px 0;
         
     }
-    .burger_menu_content .order_callBack{
-        position: static;
-        width: 210px;
-        box-shadow: none;
-        padding: 20px 0;
-    }
+    
     .burger_menu_content .forder_callBack_content{
         flex-direction: column;
     }
@@ -1726,10 +1720,20 @@ form h3{
     .basket_wrapper .name_col span:nth-child(4) {
         margin: 0 90px 0 70px;
     }
-
+   
+    
+    .order_callBack_wrapper{
+        overflow-y: auto;
+    }
+    
+    .order_callBack_wrapper{
+        padding: 20px 0;
+        
+    }
 
 }
 @media screen and (max-width: 600px ) {
+    
     .catalog_wrapper .catalog_item{
         flex-basis: 100%;
     }
@@ -1892,5 +1896,6 @@ form h3{
     .order_callBack_wrapper button{
         padding: 16px 87px;
     }
+    
     
 }
