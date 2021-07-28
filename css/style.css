@@ -989,6 +989,7 @@ form h3{
 .shipping_info_item{
     margin-right: 116px;
     margin-bottom: 32px;
+    width: 328px;
 }
 .shipping_info_item h3{
     font-weight: 400;
@@ -1186,6 +1187,7 @@ form h3{
     flex-direction: column;
     align-items: flex-end;
     margin-top: 32px;
+    max-width: 100%;
 }
 .basket_wrapper .order_basket_prod .form_to_order form > div + div{
     margin-top: 15px;
@@ -1357,13 +1359,15 @@ form h3{
     transition: .3s;
 }
 .contacts_wrapper .map{
-    
     width: 517px;
-    
+    height: 368px;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
 }
 
-.contacts_wrapper .map img{
-    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+.contacts_wrapper .map iframe{
+    width: 100%;
+    height: 100%;
+    
 }
 
 
@@ -1601,6 +1605,9 @@ form h3{
     .footer_wrapepr > div:last-child{
         margin-right: 0;
     }
+    .basket_wrapper .order_basket_prod .form_to_order span{
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 800px ){
     .shipping_payment_item{
@@ -1820,12 +1827,9 @@ form h3{
         margin-top: 35px;
     }
     .contacts_wrapper .map{
-        height: auto;
+        height: 368px;
     }
-    .contacts_wrapper .map,
-    .contacts_wrapper .map img{
-        width: 100%;
-    }
+    
     .open_recipt_wrapper .top_page .img{
         width: 100%;
         text-align: center;
@@ -1874,6 +1878,18 @@ form h3{
     }
     .basket_wrapper .name_col span:nth-child(2) {
         margin: 0 153px 0 105px;
+    }
+    .order_callBack_wrapper{
+        max-width: 300px;
+    }
+    .order_callBack_wrapper input{
+        height: 45px;
+    }
+    .order_callBack_wrapper form h3{
+        font-size: 17px;
+    }
+    .order_callBack_wrapper button{
+        padding: 16px 87px;
     }
     
 }

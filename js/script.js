@@ -79,6 +79,7 @@ $(document).ready(function(){
     e.preventDefault()
     $('.order_callBack').fadeIn()
     $('.order_callBack_wrapper').fadeIn()
+    $('html').css("overflow","hidden")
     
   })
   $('.order_callBack_wrapper .close_btn').click(function(){
