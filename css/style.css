@@ -113,7 +113,7 @@ h2{
     height: 100%;
     z-index: 110;
     display: none;
-    
+    overflow-y: auto;
 }
 
 
@@ -163,7 +163,7 @@ h2{
     height: 420px;
     display: none;
     z-index: 120;
-    overflow-y: auto;
+    
 }
 .order_callBack_wrapper .order_callBack_body{
     display: flex;
