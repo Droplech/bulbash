@@ -1577,7 +1577,7 @@ form h3{
         margin: 0 190px 0 105px;
     }
     .basket_wrapper .name_col span:nth-child(4) {
-        margin: 0 90px 0 75px;
+        margin: 0 90px 0 40px;
     }
     .contacts_wrapper{
         flex-wrap: wrap;
@@ -1715,7 +1715,9 @@ form h3{
         color: red;
         margin-top: 50px;
     }
-
+    .basket_wrapper .name_col span:nth-child(4) {
+        margin: 0 90px 0 70px;
+    }
 
 
 }
@@ -1861,9 +1863,17 @@ form h3{
         flex-basis: 50%;
     }
     .footer_wrapepr .footer_info .btn{
-        padding: 15px 20px;
+        padding: 15px 5px;
+        text-align: center;
     }
     .info_abut_us_wrapper .info_item{
         flex-basis: 40%;
     }
+    .basket_item .price, .basket_item .outcome{
+        text-align: center;
+    }
+    .basket_wrapper .name_col span:nth-child(2) {
+        margin: 0 153px 0 105px;
+    }
+    
 }
